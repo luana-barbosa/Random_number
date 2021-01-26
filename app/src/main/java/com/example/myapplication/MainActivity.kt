@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import java.util.*
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +23,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         // Código
         if (v?.id == R.id.buttonRandom || v?.id == R.id.textNumber) {
             //Lógica
+            val id = random()
         }
     }
+
+    fun random(): Int {
+        return Random.nextInt(50) + 1
+
+    }
+
 }
