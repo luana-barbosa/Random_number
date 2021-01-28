@@ -23,13 +23,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         // Código
         if (v?.id == R.id.buttonRandom || v?.id == R.id.textNumber) {
             //Lógica
-            val id = random()
+            textNumber.text = random().toString()
         }
     }
 
-    fun random(): Int {
-        return Random.nextInt(50) + 1
-
+    private fun random(): Int {
+     return Random.nextInt(50)+1
     }
-
 }
