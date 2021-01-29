@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         buttonRandom.setOnClickListener(this)
         textNumber.setOnClickListener(this)
     }
-
     override fun onClick(v: View?) {
         // Código
         if (v?.id == R.id.buttonRandom || v?.id == R.id.textNumber) {
@@ -26,10 +25,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val id = random()
         }
     }
-
     fun random(): Int {
         return Random.nextInt(50) + 1
-
     }
 
 }
