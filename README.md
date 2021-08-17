@@ -1,2 +1,2 @@
-# Randomicos
-Aplicativo de Sorteio de numero aleatorio.
+# Random Number
+Random number drawing application.
